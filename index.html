@@ -15,7 +15,6 @@
       <p>Browse beautiful photos by category</p>
     </div>
 
-    <!-- Category Filter Buttons -->
     <div class="filters">
       <button class="filter-btn active" onclick="filterGallery('all', this)">All</button>
       <button class="filter-btn" onclick="filterGallery('nature', this)">Nature</button>
@@ -24,168 +23,166 @@
       <button class="filter-btn" onclick="filterGallery('abstract', this)">Abstract</button>
     </div>
 
-    <!-- Image Grid -->
     <div class="gallery" id="gallery">
 
-  <div class="card" data-category="nature">
-    <img src="https://i.pinimg.com/originals/9f/f8/2f/9ff82f80eb3c976a49f55b3806ec1db0.jpg" alt="Forest Path" />
-    <div class="overlay">View</div>
-    <p class="card-label">Forest Path</p>
-  </div>
+      <div class="card" data-category="nature">
+        <img src="https://i.pinimg.com/originals/9f/f8/2f/9ff82f80eb3c976a49f55b3806ec1db0.jpg" alt="Forest Path" />
+        <div class="overlay">View</div>
+        <p class="card-label">Forest Path</p>
+      </div>
 
-  <div class="card" data-category="city">
-    <img src="https://picsum.photos/seed/city12/400/300" alt="City Skyline" />
-    <div class="overlay">View</div>
-    <p class="card-label">City Skyline</p>
-  </div>
+      <div class="card" data-category="city">
+        <img src="https://picsum.photos/seed/city12/400/300" alt="City Skyline" />
+        <div class="overlay">View</div>
+        <p class="card-label">City Skyline</p>
+      </div>
 
-  <div class="card" data-category="travel">
-    <img src="https://picsum.photos/seed/paris5/400/300" alt="Paris Street" />
-    <div class="overlay">View</div>
-    <p class="card-label">Paris Street</p>
-  </div>
+      <div class="card" data-category="travel">
+        <img src="https://picsum.photos/seed/paris5/400/300" alt="Paris Street" />
+        <div class="overlay">View</div>
+        <p class="card-label">Paris Street</p>
+      </div>
 
-  <div class="card" data-category="abstract">
-    <img src="https://picsum.photos/seed/abst3/400/300" alt="Color Burst" />
-    <div class="overlay">View</div>
-    <p class="card-label">Color Burst</p>
-  </div>
+      <div class="card" data-category="abstract">
+        <img src="https://picsum.photos/seed/abst3/400/300" alt="Color Burst" />
+        <div class="overlay">View</div>
+        <p class="card-label">Color Burst</p>
+      </div>
 
-  <div class="card" data-category="nature">
-    <img src="https://picsum.photos/seed/mount9/400/300" alt="Mountain Lake" />
-    <div class="overlay">View</div>
-    <p class="card-label">Mountain Lake</p>
-  </div>
+      <div class="card" data-category="nature">
+        <img src="https://picsum.photos/seed/mount9/400/300" alt="Mountain Lake" />
+        <div class="overlay">View</div>
+        <p class="card-label">Mountain Lake</p>
+      </div>
 
-  <div class="card" data-category="nature">
-    <img src="https://images.pexels.com/photos/31185998/pexels-photo-31185998.jpeg?cs=srgb&dl=pexels-jedrzej-koralewski-14125120-31185998.jpg&fm=jpg" alt="Snowy Peak" />
-    <div class="overlay">View</div>
-    <p class="card-label">Snowy Peak</p>
-  </div>
+      <div class="card" data-category="nature">
+        <img src="https://images.pexels.com/photos/31185998/pexels-photo-31185998.jpeg?cs=srgb&dl=pexels-jedrzej-koralewski-14125120-31185998.jpg&fm=jpg" alt="Snowy Peak" />
+        <div class="overlay">View</div>
+        <p class="card-label">Snowy Peak</p>
+      </div>
 
-  <div class="card" data-category="nature">
-    <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=beautiful-beauty-blue-414612.jpg&fm=jpg" alt="Blue Sky Valley" />
-    <div class="overlay">View</div>
-    <p class="card-label">Blue Sky Valley</p>
-  </div>
+      <div class="card" data-category="nature">
+        <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=beautiful-beauty-blue-414612.jpg&fm=jpg" alt="Blue Sky Valley" />
+        <div class="overlay">View</div>
+        <p class="card-label">Blue Sky Valley</p>
+      </div>
 
-  <div class="card" data-category="nature">
-    <img src="https://wallpaperaccess.com/full/393738.jpg" alt="Golden Sunset" />
-    <div class="overlay">View</div>
-    <p class="card-label">Golden Sunset</p>
-  </div>
+      <div class="card" data-category="nature">
+        <img src="https://wallpaperaccess.com/full/393738.jpg" alt="Golden Sunset" />
+        <div class="overlay">View</div>
+        <p class="card-label">Golden Sunset</p>
+      </div>
 
-  <div class="card" data-category="nature">
-    <img src="https://hips.hearstapps.com/hmg-prod/images/beautiful-waterfall-in-forest-in-khuean-royalty-free-image-1576785617.jpg" alt="Forest Waterfall" />
-    <div class="overlay">View</div>
-    <p class="card-label">Forest Waterfall</p>
-  </div>
+      <div class="card" data-category="nature">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/beautiful-waterfall-in-forest-in-khuean-royalty-free-image-1576785617.jpg" alt="Forest Waterfall" />
+        <div class="overlay">View</div>
+        <p class="card-label">Forest Waterfall</p>
+      </div>
 
-  <div class="card" data-category="nature">
-    <img src="https://static.vecteezy.com/system/resources/previews/032/259/695/large_2x/beautiful-peacock-in-the-water-flowers-house-nature-wallpaper-hd-wallpaper-ai-generated-free-photo.jpg" alt="Peacock Garden" />
-    <div class="overlay">View</div>
-    <p class="card-label">Peacock Garden</p>
-  </div>
+      <div class="card" data-category="nature">
+        <img src="https://static.vecteezy.com/system/resources/previews/032/259/695/large_2x/beautiful-peacock-in-the-water-flowers-house-nature-wallpaper-hd-wallpaper-ai-generated-free-photo.jpg" alt="Peacock Garden" />
+        <div class="overlay">View</div>
+        <p class="card-label">Peacock Garden</p>
+      </div>
 
-  <div class="card" data-category="nature">
-    <img src="https://thumbs.dreamstime.com/b/beautiful-rietvlei-nature-reserve-near-pretoria-centurion-lined-purple-pompom-weeds-campuloclinium-macrocephalum-root-146024366.jpg" alt="Purple Meadow" />
-    <div class="overlay">View</div>
-    <p class="card-label">Purple Meadow</p>
-  </div>
+      <div class="card" data-category="nature">
+        <img src="https://thumbs.dreamstime.com/b/beautiful-rietvlei-nature-reserve-near-pretoria-centurion-lined-purple-pompom-weeds-campuloclinium-macrocephalum-root-146024366.jpg" alt="Purple Meadow" />
+        <div class="overlay">View</div>
+        <p class="card-label">Purple Meadow</p>
+      </div>
 
-  <div class="card" data-category="nature">
-    <img src="https://tse2.mm.bing.net/th/id/OIP.uWCODMVF4qGinyO9iwj8TgHaE7?pid=Api&P=0&h=220" alt="Green Hills" />
-    <div class="overlay">View</div>
-    <p class="card-label">Green Hills</p>
-  </div>
+      <div class="card" data-category="nature">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.uWCODMVF4qGinyO9iwj8TgHaE7?pid=Api&P=0&h=220" alt="Green Hills" />
+        <div class="overlay">View</div>
+        <p class="card-label">Green Hills</p>
+      </div>
 
-  <div class="card" data-category="nature">
-    <img src="https://images.pexels.com/photos/239520/pexels-photo-239520.jpeg?cs=srgb&dl=light-road-landscape-239520.jpg&fm=jpg" alt="Country Road" />
-    <div class="overlay">View</div>
-    <p class="card-label">Country Road</p>
-  </div>
+      <div class="card" data-category="nature">
+        <img src="https://images.pexels.com/photos/239520/pexels-photo-239520.jpeg?cs=srgb&dl=light-road-landscape-239520.jpg&fm=jpg" alt="Country Road" />
+        <div class="overlay">View</div>
+        <p class="card-label">Country Road</p>
+      </div>
 
-  <div class="card" data-category="nature">
-    <img src="https://wallpaperaccess.com/full/1137443.jpg" alt="Misty Mountains" />
-    <div class="overlay">View</div>
-    <p class="card-label">Misty Mountains</p>
-  </div>
+      <div class="card" data-category="nature">
+        <img src="https://wallpaperaccess.com/full/1137443.jpg" alt="Misty Mountains" />
+        <div class="overlay">View</div>
+        <p class="card-label">Misty Mountains</p>
+      </div>
 
-  <div class="card" data-category="nature">
-    <img src="https://wallpaperaccess.com/full/194458.jpg" alt="Aurora Sky" />
-    <div class="overlay">View</div>
-    <p class="card-label">Aurora Sky</p>
-  </div>
+      <div class="card" data-category="nature">
+        <img src="https://wallpaperaccess.com/full/194458.jpg" alt="Aurora Sky" />
+        <div class="overlay">View</div>
+        <p class="card-label">Aurora Sky</p>
+      </div>
 
-  <div class="card" data-category="city">
-    <img src="https://wallpaperaccess.com/full/1534864.jpg" alt="Steel Bridge" />
-    <div class="overlay">View</div>
-    <p class="card-label">Steel Bridge</p>
-  </div>
+      <div class="card" data-category="city">
+        <img src="https://wallpaperaccess.com/full/1534864.jpg" alt="Steel Bridge" />
+        <div class="overlay">View</div>
+        <p class="card-label">Steel Bridge</p>
+      </div>
 
-  <div class="card" data-category="travel">
-    <img src="https://picsum.photos/seed/tokyo1/400/300" alt="Tokyo Lights" />
-    <div class="overlay">View</div>
-    <p class="card-label">Tokyo Lights</p>
-  </div>
+      <div class="card" data-category="travel">
+        <img src="https://picsum.photos/seed/tokyo1/400/300" alt="Tokyo Lights" />
+        <div class="overlay">View</div>
+        <p class="card-label">Tokyo Lights</p>
+      </div>
 
-  <div class="card" data-category="abstract">
-    <img src="https://store-images.s-microsoft.com/image/apps.17593.14427308708381960.c08919ed-27fc-45de-a4e7-199407fa59fe.d0b455a2-d411-433e-bd17-74834f38dc5a?h=1080" alt="Wave Pattern" />
-    <div class="overlay">View</div>
-    <p class="card-label">Wave Pattern</p>
-  </div>
+      <div class="card" data-category="abstract">
+        <img src="https://store-images.s-microsoft.com/image/apps.17593.14427308708381960.c08919ed-27fc-45de-a4e7-199407fa59fe.d0b455a2-d411-433e-bd17-74834f38dc5a?h=1080" alt="Wave Pattern" />
+        <div class="overlay">View</div>
+        <p class="card-label">Wave Pattern</p>
+      </div>
 
-  <div class="card" data-category="nature">
-    <img src="https://i.natgeofe.com/n/d41cb30f-bd3c-4d05-b4ba-3338fce81f63/NGSF000003_190803__100592_4x3.jpg" alt="Wildflowers" />
-    <div class="overlay">View</div>
-    <p class="card-label">Wildflowers</p>
-  </div>
+      <div class="card" data-category="nature">
+        <img src="https://i.natgeofe.com/n/d41cb30f-bd3c-4d05-b4ba-3338fce81f63/NGSF000003_190803__100592_4x3.jpg" alt="Wildflowers" />
+        <div class="overlay">View</div>
+        <p class="card-label">Wildflowers</p>
+      </div>
 
-  <div class="card" data-category="nature">
-    <img src="https://tse4.mm.bing.net/th/id/OIP.uVBC7CY1D_NFbX2vtgwAygHaFj?pid=Api&P=0&h=220" alt="Flower Field" />
-    <div class="overlay">View</div>
-    <p class="card-label">Flower Field</p>
-  </div>
+      <div class="card" data-category="nature">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.uVBC7CY1D_NFbX2vtgwAygHaFj?pid=Api&P=0&h=220" alt="Flower Field" />
+        <div class="overlay">View</div>
+        <p class="card-label">Flower Field</p>
+      </div>
 
-  <div class="card" data-category="nature">
-    <img src="https://images.pexels.com/photos/47547/squirrel-animal-cute-rodents-47547.jpeg?cs=srgb&dl=pexels-pixabay-47547.jpg&fm=jpg" alt="Cute Squirrel" />
-    <div class="overlay">View</div>
-    <p class="card-label">Cute Squirrel</p>
-  </div>
+      <div class="card" data-category="nature">
+        <img src="https://images.pexels.com/photos/47547/squirrel-animal-cute-rodents-47547.jpeg?cs=srgb&dl=pexels-pixabay-47547.jpg&fm=jpg" alt="Cute Squirrel" />
+        <div class="overlay">View</div>
+        <p class="card-label">Cute Squirrel</p>
+      </div>
 
-  <div class="card" data-category="nature">
-    <img src="https://static.vecteezy.com/system/resources/thumbnails/049/855/347/small_2x/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg" alt="Serene Valley" />
-    <div class="overlay">View</div>
-    <p class="card-label">Serene Valley</p>
-  </div>
+      <div class="card" data-category="nature">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/049/855/347/small_2x/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg" alt="Serene Valley" />
+        <div class="overlay">View</div>
+        <p class="card-label">Serene Valley</p>
+      </div>
 
-  <div class="card" data-category="nature">
-    <img src="https://wallpapercave.com/wp/wp4088652.jpg" alt="Ocean Cliffs" />
-    <div class="overlay">View</div>
-    <p class="card-label">Ocean Cliffs</p>
-  </div>
+      <div class="card" data-category="nature">
+        <img src="https://wallpapercave.com/wp/wp4088652.jpg" alt="Ocean Cliffs" />
+        <div class="overlay">View</div>
+        <p class="card-label">Ocean Cliffs</p>
+      </div>
 
-  <div class="card" data-category="nature">
-    <img src="https://cdn.wallpapersafari.com/61/93/3xfFGv.jpg" alt="Tropical Beach" />
-    <div class="overlay">View</div>
-    <p class="card-label">Tropical Beach</p>
-  </div>
+      <div class="card" data-category="nature">
+        <img src="https://cdn.wallpapersafari.com/61/93/3xfFGv.jpg" alt="Tropical Beach" />
+        <div class="overlay">View</div>
+        <p class="card-label">Tropical Beach</p>
+      </div>
 
-  <div class="card" data-category="nature">
-    <img src="https://images.pexels.com/photos/34950/pexels-photo.jpg?cs=srgb&dl=nature-forest-industry-34950.jpg&fm=jpg" alt="Pine Forest" />
-    <div class="overlay">View</div>
-    <p class="card-label">Pine Forest</p>
-  </div>
+      <div class="card" data-category="nature">
+        <img src="https://images.pexels.com/photos/34950/pexels-photo.jpg?cs=srgb&dl=nature-forest-industry-34950.jpg&fm=jpg" alt="Pine Forest" />
+        <div class="overlay">View</div>
+        <p class="card-label">Pine Forest</p>
+      </div>
 
-  <div class="card" data-category="nature">
-    <img src="https://images.pexels.com/photos/378442/pexels-photo-378442.jpeg?cs=srgb&dl=dawn-nature-sky-378442.jpg&fm=jpg" alt="Dawn Sky" />
-    <div class="overlay">View</div>
-    <p class="card-label">Dawn Sky</p>
-  </div>
+      <div class="card" data-category="nature">
+        <img src="https://images.pexels.com/photos/378442/pexels-photo-378442.jpeg?cs=srgb&dl=dawn-nature-sky-378442.jpg&fm=jpg" alt="Dawn Sky" />
+        <div class="overlay">View</div>
+        <p class="card-label">Dawn Sky</p>
+      </div>
 
-</div>
+    </div>
 
-    <!-- Prev / Next Buttons -->
     <div class="nav-row">
       <button id="prevBtn" onclick="prevImage()">&#8592; Prev</button>
       <button id="nextBtn" onclick="nextImage()">Next &#8594;</button>

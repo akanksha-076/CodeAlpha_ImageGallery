@@ -41,11 +41,11 @@ function nextImage() {
 function openLightbox(index) {
   currentIndex = index;
   updateLightbox();
-  document.getElementById('lightbox').style.display = 'flex';
+  document.getElementById('lightbox').classList.add('open');
 }
 
 function closeLightbox() {
-  document.getElementById('lightbox').style.display = 'none';
+  document.getElementById('lightbox').classList.remove('open');
 }
 
 function updateLightbox() {
@@ -74,7 +74,7 @@ document.getElementById('lightbox').addEventListener('click', function(e) {
 
 document.addEventListener('keydown', function(e) {
   const lb = document.getElementById('lightbox');
-  if (lb.style.display === 'flex') {
+  if (lb.classList.contains('open')) {
     if (e.key === 'ArrowLeft') lbPrev();
     if (e.key === 'ArrowRight') lbNext();
     if (e.key === 'Escape') closeLightbox();

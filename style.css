@@ -111,7 +111,7 @@ body {
   font-size: 14px;
   font-weight: bold;
   opacity: 0;
-  transition: opacity 0.25s;
+  transition: opacity 0.3s ease;
 }
 
 .card:hover .overlay {
