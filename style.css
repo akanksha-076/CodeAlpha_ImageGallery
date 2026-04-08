@@ -1,0 +1,236 @@
+/* ===== Reset ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Page Background ===== */
+body {
+  background-color: #f5f0eb;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* ===== Page Wrapper ===== */
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* ===== Header ===== */
+.header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.header p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* ===== Filter Buttons ===== */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.filter-btn {
+  padding: 7px 18px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.filter-btn:hover {
+  background-color: #e0d8cf;
+}
+
+.filter-btn.active {
+  background-color: #7a6a5a;
+  color: #fff;
+  border-color: #7a6a5a;
+}
+
+/* ===== Gallery Grid ===== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 14px;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Image Card ===== */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== Hover Overlay ===== */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 160px;
+  background-color: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.card-label {
+  padding: 8px 10px;
+  font-size: 13px;
+  color: #555;
+}
+
+/* ===== Hidden Cards (for filter) ===== */
+.card.hidden {
+  display: none;
+}
+
+/* ===== Prev / Next Navigation ===== */
+.nav-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+.nav-row button {
+  padding: 8px 22px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.nav-row button:hover {
+  background-color: #e0d8cf;
+}
+
+/* ===== Lightbox ===== */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s;
+}
+
+.lightbox.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.lb-box {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+.lb-box img {
+  width: 100%;
+  border-radius: 8px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.lb-box p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.lb-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #444;
+}
+
+.lb-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.lb-nav button {
+  padding: 7px 18px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  background-color: #f5f0eb;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.lb-nav button:hover {
+  background-color: #e0d8cf;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 500px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+}
